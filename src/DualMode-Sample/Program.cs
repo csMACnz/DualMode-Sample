@@ -71,7 +71,7 @@ namespace DualMode_Sample
             Process process = Process.GetProcessById(u);
 
             // Check if it is console?
-            return process.ProcessName == "cmd";
+            return process.ProcessName == "cmd" || process.ProcessName == "powershell";
         }
 
         private static void RunInConsole(MainArgs args)
